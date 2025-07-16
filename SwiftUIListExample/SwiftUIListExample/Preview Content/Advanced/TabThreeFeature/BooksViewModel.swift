@@ -8,7 +8,7 @@
 import Combine
 
 class BooksViewModel: ObservableObject {
-    @Published var books: [AdvancedBookViewModel] = []
+    var books: [AdvancedBookViewModel] = []
     @Published private(set) var totalQuantity: Int = 0
     
     private var cancellables = Set<AnyCancellable>()
