@@ -6,7 +6,7 @@
 //
 import SwiftUI
 
-struct TabThreeView: View {
+struct TabTwoView: View {
     @State private var books: [AdvancedBookViewModel]
 
     init() {

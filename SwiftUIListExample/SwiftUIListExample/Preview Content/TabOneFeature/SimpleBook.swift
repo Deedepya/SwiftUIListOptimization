@@ -13,12 +13,4 @@ struct SimpleBook: Identifiable {
     var quantity: Int
 }
 
-class SimpleBookDatabase {
-    func fetchBooks() -> [SimpleBook] {
-        return [
-            SimpleBook(name: "1984", quantity: 1),
-            SimpleBook(name: "To Kill a Mockingbird", quantity: 2),
-            SimpleBook(name: "The Great Gatsby", quantity: 0)
-        ]
-    }
-}
+
