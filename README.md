@@ -4,7 +4,7 @@ This SwiftUI project demonstrates three approaches to state management through s
 
 ---
 
-## 🔹 Tab 1 – Simple State with Structs
+## Tab 1 – Simple State with Structs
 
 **State Management**  
 Uses **`@State`** with value-type `struct` for books and **`@Binding`** in each row.
@@ -16,7 +16,7 @@ Not optimal for large lists, as even one update may cause unnecessary redraws.
 
 ---
 
-## 🔹 Tab 2 – Row-Level Observability with `@ObservedObject`
+## Tab 2 – Row-Level Observability with `@ObservedObject`
 
 **State Management**  
 Uses reference-type models ie., class (**`AdvancedBookViewModel`**) for each row instead of struct.  
@@ -29,7 +29,7 @@ Much better suited for larger and complex lists.
 
 ---
 
-## 🔹 Tab 3 – Centralized State with `@StateObject`
+## Tab 3 – Centralized State with `@StateObject`
 
 **State Management**  
 Uses a shared **`BooksViewModel`** with **`@Published`** `books` which contains an array of **`AdvancedBookViewModel`** and **`@Published`** `totalQuantity`.  
