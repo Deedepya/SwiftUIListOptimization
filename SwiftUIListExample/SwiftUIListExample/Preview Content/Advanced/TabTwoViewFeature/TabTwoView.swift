@@ -10,7 +10,7 @@ struct TabTwoView: View {
     @State private var books: [AdvancedBookViewModel]
 
     init() {
-        let db = BookDatabaseService()
+        let db = AdvanceDatabaseService()
         let rawBooks = db.fetchBooks()
         _books = State(initialValue: rawBooks.map { AdvancedBookViewModel(book: $0) })
     }
@@ -21,7 +21,7 @@ struct TabTwoView: View {
         NavigationView {
             List {
                 ForEach(books) { book in
-                    AdvancedBookRow(book: book)
+                    AdvancedBookRowView(book: book)
                 }
             }
             .navigationTitle("Book List Tab 2")

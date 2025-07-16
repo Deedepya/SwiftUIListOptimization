@@ -21,11 +21,6 @@ struct ContentView: View {
                     Label("Tab 2", systemImage: "book.fill")
                 }
             
-            TabTwoExtraView()
-                .tabItem {
-                    Label("Tab 2 extra", systemImage: "book.fill")
-                }
-            
             TabThreeView()
                 .tabItem {
                     Label("Tab 3", systemImage: "book.fill")

@@ -11,7 +11,7 @@ struct TabOneView: View {
     @State private var books: [SimpleBook]
 
        init() {
-           let database = SimpleBookDatabase()
+           let database = SimpleDatabaseService()
            let fetchedBooks = database.fetchBooks()
            _books = State(initialValue: fetchedBooks)
        }
